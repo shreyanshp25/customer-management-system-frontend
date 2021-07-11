@@ -7,11 +7,13 @@ import { CustomerComponentComponent } from './components/customer-component/cust
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialsModule } from './materials/materials.module';
 import {HttpClientModule} from '@angular/common/http';
+import { CreateCustomerComponent } from './components/create-customer/create-customer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CustomerComponentComponent,
+    CreateCustomerComponent,
   ],
   imports: [
     BrowserModule,
