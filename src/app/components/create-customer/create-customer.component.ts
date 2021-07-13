@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Customers } from 'src/app/class/customers';
 
 @Component({
   selector: 'app-create-customer',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./create-customer.component.css']
 })
 export class CreateCustomerComponent implements OnInit {
-
+  customer: Customers = new Customers();
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  onSubmit(){
+    
+  }
 }

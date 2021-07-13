@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatTableModule} from '@angular/material/table';
 
 const materialComponents = [
-  MatTableModule,
+  MatTableModule, 
+  MatFormFieldModule
 ];
 
 @NgModule({
