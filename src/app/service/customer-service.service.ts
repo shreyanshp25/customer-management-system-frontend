@@ -14,4 +14,7 @@ export class CustomerServiceService {
   getCustomerList() : Observable<Customers[]>{
     return this.httpclient.get<Customers[]>(`${this.baseUrl}`);
   }
+  createCustomer(customer: Customers) : Observable<Object>{
+    return this.httpclient.post<Object>(`${this.baseUrl}`, customer);
+  } 
 }
