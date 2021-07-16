@@ -8,12 +8,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialsModule } from './materials/materials.module';
 import {HttpClientModule} from '@angular/common/http';
 import { CreateCustomerComponent } from './components/create-customer/create-customer.component';
+import { UpdateCustomerComponent } from './components/update-customer/update-customer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CustomerComponentComponent,
     CreateCustomerComponent,
+    UpdateCustomerComponent,
   ],
   imports: [
     BrowserModule,
