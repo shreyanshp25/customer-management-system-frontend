@@ -24,4 +24,8 @@ export class CustomerServiceService {
   updateCustomerById(id: number, customer: Customers) : Observable<Object>{
     return this.httpclient.put<Object>(`${this.baseUrl}/${id}`, customer);
   }
+  //map is getting returned therefore type is object
+  deleteCustomer(id : number) : Observable<Object>{
+    return this.httpclient.delete<Object>(`${this.baseUrl}/${id}`);
+  }
 }

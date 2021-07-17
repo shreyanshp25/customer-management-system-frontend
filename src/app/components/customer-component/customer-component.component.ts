@@ -25,5 +25,12 @@ export class CustomerComponentComponent implements OnInit {
   private updateCustomer(id : number){
     this.router.navigate(['update-customer', id]);
   }
+  private deleteCustomer(id: number){
+    this.customerService.deleteCustomer(id).subscribe(data => {
+      console.log(data);
+      this.getCustomerList();
+    },
+    error => {console.log(error);});
+  }
 
 }
