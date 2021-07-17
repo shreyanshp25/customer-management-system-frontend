@@ -1,4 +1,5 @@
 import { HttpClient } from '@angular/common/http';
+import { Identifiers } from '@angular/compiler';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Customers } from '../class/customers';
@@ -17,4 +18,10 @@ export class CustomerServiceService {
   createCustomer(customer: Customers) : Observable<Object>{
     return this.httpclient.post<Object>(`${this.baseUrl}`, customer);
   } 
+  getCustomerById(id : number) : Observable<Customers>{
+    return this.httpclient.get<Customers>(`${this.baseUrl}/${id}`);
+  }
+  updateCustomerById(id: number, customer: Customers) : Observable<Object>{
+    return this.httpclient.put<Object>(`${this.baseUrl}/${id}`, customer);
+  }
 }
