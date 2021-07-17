@@ -33,4 +33,8 @@ export class CustomerComponentComponent implements OnInit {
     error => {console.log(error);});
   }
 
+  private viewCustomer(id: number){
+    this.router.navigate(['view-customer', id]);
+  }
+
 }
