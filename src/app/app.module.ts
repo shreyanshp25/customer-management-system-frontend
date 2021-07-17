@@ -9,6 +9,7 @@ import { MaterialsModule } from './materials/materials.module';
 import {HttpClientModule} from '@angular/common/http';
 import { CreateCustomerComponent } from './components/create-customer/create-customer.component';
 import { UpdateCustomerComponent } from './components/update-customer/update-customer.component';
+import { ViewCustomerComponent } from './components/view-customer/view-customer.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { UpdateCustomerComponent } from './components/update-customer/update-cus
     CustomerComponentComponent,
     CreateCustomerComponent,
     UpdateCustomerComponent,
+    ViewCustomerComponent,
   ],
   imports: [
     BrowserModule,
